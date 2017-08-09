@@ -1,7 +1,6 @@
 <?php
 /**
  * The template for displaying all pages.
- * Template Name: Praise Page Template
  *
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
@@ -20,8 +19,7 @@ get_header('simple'); ?>
 	@media ( min-width: 992px ) {
 
 		#praise-page-header {
-			background-image: url(<?php the_field('hero_background_image_desktop') ?>);
-			/* background-image: url('/wp-content/uploads/2017/08/praise-page-1920x600.jpg'); */
+			background-image: url('/wp-content/uploads/2017/08/praise-page-1920x600.jpg');
 			background-size: 100%;
 			background-repeat: no-repeat;
 		}		
@@ -29,8 +27,7 @@ get_header('simple'); ?>
 	@media ( max-width: 991px ) {
 
 		#praise-page-header {
-			background-image: url(<?php the_field('hero_background_image_mobile') ?>);
-			/* background-image: url('/wp-content/uploads/2017/08/praise-page-mobile-800x600.jpg'); */
+			background-image: url('/wp-content/uploads/2017/08/praise-page-mobile-800x600.jpg');
 			background-size: 100%;
 			background-repeat: no-repeat;
 		}		
@@ -48,12 +45,10 @@ get_header('simple'); ?>
 
 				<article class="featured-post">
 					
-					<h2 class="headline"><?php the_field('hero_headline_text'); ?></h2>
-					<!-- <h2 class="headline">Some extraordinary client results.</h2> -->
+					<h2 class="headline">Some extraordinary client results.</h2>
 
 						<h1 class="post-title">
-							<?php the_field('hero_subheadline_text'); ?>
-							<!-- Our greatest joy is watching our clients succeed, here’s what they’re saying about us. -->
+							Our greatest joy is watching our clients succeed, here’s what they’re saying about us.
 						</h1>
 
 					<!-- <a class="btn btn-primary btn-lg" href="#">Read More »</a> -->
@@ -80,28 +75,34 @@ get_header('simple'); ?>
 	<main class="container">
 		
 		<h1 class="heading text-center">
-			<?php the_field('info_headline_text'); ?>
+			Couple of things to keep in mind.
 		</h1>
 
 
 		<div class="flex-container">
 			
 			<article class="text-box flex-item">
-			
-				<?php the_field('info_text_box_left'); ?>
-			
+				<span class="special">1)</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.
 			</article>
 
 			<article class="text-box flex-item">
-
-				<?php the_field('info_text_box_middle'); ?>
-				
+				<span class="special">2)</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</article>
 
 			<article class="text-box flex-item">
-
-				<?php the_field('info_text_box_right'); ?>
-				
+				<span class="special">3)</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. 
 			</article>
 
 		</div>
@@ -124,13 +125,12 @@ get_header('simple'); ?>
 
 			<article class="text-block text-center">
 
-				<h3 class="sub-heading"><?php the_field('praise_optin_one_subheadline'); ?></h3>
+				<h3 class="sub-heading">JOIN OVER 200,000 SUBSCRIBERS</h3>
 
-				<h1 class="heading"><?php the_field('praise_optin_one_headline'); ?></h1>
+				<h1 class="heading">GET FREE UPDATES</h1>
 
 				<div class="leadbox-embed center-block">
-					<?php the_field('praise_optin_one_leadpages_code'); ?>
-					
+					<script src="//static.leadpages.net/leadboxes/current/embed.js" async defer></script> <button data-leadbox-popup="14e99a133f72a2:142918c46b46dc" style="background: rgb(67, 72, 117);border-color: rgb(67, 72, 117);border-radius: 20px;color: #FFFFFF;display: inline-block;vertical-align: middle;padding: 16px 32px;min-width: 192px;border: 1px solid rgb(67, 72, 117);font-size: 1rem;font-family: Helvetica, Arial, sans-serif;text-align: center;outline: 0;line-height: 1;cursor: pointer;-webkit-transition: background 0.3s, color 0.3s, border 0.3s;transition: background 0.3s, color 0.3s, border 0.3s;  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);">CLICK HERE TO SUBSCRIBE</button> 									
 				</div>			
 				
 			</article>
@@ -140,7 +140,7 @@ get_header('simple'); ?>
 
 			<figure class="image-block">
 				
-				<img class="optin-right-image img-responsive" src="<?php the_field('praise_optin_one_image'); ?>" alt="">
+				<img class="optin-right-image img-responsive" src="/wp-content/uploads/2017/08/mical-praise-OPT-IN-350x350.png" alt="">
 
 			</figure>
 			
@@ -160,21 +160,18 @@ get_header('simple'); ?>
 		
 		<div class="flex-container">
 			
-			<article class="text-box flex-item text-center" v-for="post in posts">
+			<article class="text-box flex-item text-center">
 				<figure>
-					<img class="img-responsive img-circle center-block" :src="post.acf.client_image" alt="">
-					<!-- <img class="img-responsive img-circle center-block" src="/wp-content/uploads/2017/07/Sharee-Moore-150x150.jpg" alt=""> -->
+					<img class="img-responsive img-circle center-block" src="/wp-content/uploads/2017/07/Sharee-Moore-150x150.jpg" alt="">
 				</figure>
-				<h4 class="subheading"> {{ post.acf.client_description }} </h4>
-				<h2 class="heading">{{ post.title.rendered }} </h2>
-				<!-- <h2 class="heading">Sharee Moore </h2> -->
+				<h4 class="subheading">Author and Founder of the Natural Hair Community</h4>
+				<h2 class="heading">Sharee Moore </h2>
 				<p class="praise-text">
-					{{ post.acf.client_content }}
-					<!-- Tiana has been my business coach for the past 8 months. She is one of those leaders with the "inside edge" ... she stays current on the latest strategies for growing my list of clientele, increasing sales and delivering high quality customer service. If you're looking for a social media expert who can increase your bottom line - you're in luck! Your search has ended. Thank you Tiana! -->
+					Tiana has been my business coach for the past 8 months. She is one of those leaders with the "inside edge" ... she stays current on the latest strategies for growing my list of clientele, increasing sales and delivering high quality customer service. If you're looking for a social media expert who can increase your bottom line - you're in luck! Your search has ended. Thank you Tiana!
 				</p>
 			</article>
 
-<!-- 			<article class="text-box flex-item text-center">
+			<article class="text-box flex-item text-center">
 				<figure>
 					<img class="img-responsive img-circle center-block" src="/wp-content/uploads/2017/07/kelly-soto-150x150.jpg" alt="">
 				</figure>
@@ -228,7 +225,7 @@ get_header('simple'); ?>
 				<p class="praise-text">
 					Tiana has been so helpful in the development of my website and so so wonderful with explaining this process that I understand. She has the passion of helping others and is A+ in this. She truly loves what she does and shares with you all the steps needed to be successful. I am glad I invested in myself with her guidance.
 				</p>
-			</article> -->
+			</article>
 
 		</div>
 
@@ -401,167 +398,6 @@ get_header('simple'); ?>
 	
 </section>
 
-<script type="text/javascript">
-
-new Vue ({
-  el: '#normal-praise-loop',
-  data: {
-    videoTitle:     'VIDEOS',  
-    news:           'LATEST NEWS',  
-    ajax:           '<?php echo get_site_url(); ?>',
-    posts:          '',
-    vids:           '',
-    singlePost:     [''],
-    show:           false,
-    id:             '' 
-  },  
-  created: function() {
-
-    this.getNews();
-    // this.getVids();
-
-    this.getSingle(758);
-    // this.getSingleVid(3310);
-  },
-  methods: {
-     getNews: function() {
-
-        var app = this;
-
-         // axios.get( app.ajax + '/wp-json/wp/v2/posts?categories=5&per_page=100')
-         // axios.get( app.ajax + '/wp-json/wp/v2/posts?per_page=100')
-         axios.get( app.ajax + '/wp-json/wp/v2/testimonials-api?per_page=100')
-          .then(function(response) {
-            app.posts = response.data;
-            app.id = app.posts[0].id;
-
-            console.log(app.posts);
-
-            return app.posts;
-        })
-         .catch(function(error){
-           console.log(error);
-         });
-
-     },
-     
-     getSingle: function(id, show) {
-
-        var app = this;
-
-        console.log("this is id: " + id);
-
-         axios.get( app.ajax + '/wp-json/wp/v2/posts/' + id)
-          .then(function(response) {
-            // app.singlePostData = response.data;
-            // console.log(response.data.title.rendered);
-            // console.log(response.data);
-            
-
-            app.show = true;
-
-            app.singlePost = {
-
-
-              id:             response.data.id,
-              title:          response.data.title.rendered,
-              content:        response.data.content.rendered,
-              featured_full:  response.data.featured_full 
-            }
-
-            // console.log( app.singlePost );
-
-            return app.singlePost;
-
-            app.show = false;
-        })
-         .catch(function(error){
-           console.log(error);
-         })
-     },
-
-
-     getSingleNews: function(id, show) {
-
-        var app = this;
-
-        console.log("this is id: " + id);
-
-         axios.get( app.ajax + '/wp-json/wp/v2/posts/' + id)
-          .then(function(response) {
-            // app.singlePostData = response.data;
-            // console.log(response.data.title.rendered);
-            // console.log(response.data);
-            
-
-            app.show = true;
-
-            app.singlePost = {
-
-
-              id:             response.data.id,
-              title:          response.data.title.rendered,
-              content:        response.data.content.rendered,
-              featured_full:  response.data.featured_full 
-            }
-
-            // console.log( app.singlePost );
-
-            return app.singlePost;
-
-            app.show = false;
-        })
-         .catch(function(error){
-           console.log(error);
-         })
-     },
-
-
-         
-  }
-
-});
-
-
-// new Vue ({
-//   el: '#app',
-//   data: {
-//     message:  'Vue 2.0 is Working',
-//     ajax:     'Posts Should Display Here',
-//     posts:    ''
-//   },
-//   methods: {
-//     selectFruit(post) {
-//       this.message = post;
-//     }
-//   },
-//   created: function() {
-//     // console.log('created ran');
-//     this.$http.get('http://dmol.local/wp-json/wp/v2/posts/')
-//       .then(function(response){
-//           console.log(response);
-
-//           this.posts = response.data;
-//       });
-//   }
-// });
-
-
-
-
-// new Vue ({
-//   el: '#app',
-//   data: {
-//     message: 'Hello Vue 2.0',
-//     fruits: [ 'apple', 'Microsoft', 'VMware', 'OSx' ]
-//   },
-//   methods: {
-//     selectFruit(fruit) {
-//       this.message = fruit;
-//     }
-//   }
-// });  
-</script>
 
 <?php
 get_footer();

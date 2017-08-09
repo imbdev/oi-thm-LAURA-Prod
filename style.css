@@ -6938,7 +6938,7 @@ img {
  *
  */
 #praise-page-header .overlay {
-  background-color: rgba(239, 73, 130, 0.7); }
+  background-color: rgba(135, 207, 190, 0.6); }
 #praise-page-header .praise-header-image {
   position: absolute;
   top: 0;
@@ -6990,7 +6990,7 @@ img {
  *
  */
 #praise-text-info-block {
-  background: url(/wp-content/uploads/2017/05/top-hero-bg-400x400-lightest.jpg) fixed;
+  background: url(/wp-content/uploads/2017/08/top-hero-bg-400x400-lightest.jpg) fixed;
   padding-top: 5rem;
   padding-bottom: 5rem; }
   #praise-text-info-block .flex-container .flex-item {
@@ -7034,7 +7034,7 @@ img {
   min-height: 400px;
   padding-top: 4rem;
   background-color: #ef4982;
-  background: url(/wp-content/uploads/2017/05/background-imb-blg-social.jpg) fixed; }
+  background: url(/wp-content/uploads/2017/08/background-imb-blg-social.jpg) fixed; }
   @media (min-width: 500px) {
     #praise-page-optin-block {
       padding-top: 7rem; } }
@@ -7063,8 +7063,11 @@ img {
   padding-bottom: 5rem; }
   #normal-praise-loop .flex-container .flex-item {
     margin-bottom: 1rem;
-    box-shadow: 2px 2px 6px lightgray; }
-  @media (min-width: 900px) {
+    box-shadow: 2px 2px 6px lightgray;
+    background: url("/wp-content/uploads/2017/07/skulls-white.jpg") fixed; }
+    #normal-praise-loop .flex-container .flex-item:hover {
+      box-shadow: inset 2px 2px 16px lightgray; }
+  @media (min-width: 992px) {
     #normal-praise-loop .flex-container {
       display: -webkit-box;
       display: -moz-box;
@@ -7112,6 +7115,8 @@ img {
   #video-praise-loop .flex-container .flex-item {
     margin-bottom: 1rem;
     box-shadow: 2px 2px 6px lightgray; }
+    #video-praise-loop .flex-container .flex-item:hover {
+      box-shadow: inset 2px 2px 16px lightgray; }
   @media (min-width: 900px) {
     #video-praise-loop .flex-container {
       display: -webkit-box;
@@ -7154,68 +7159,6 @@ img {
 * CONTACT PAGE STYLES
 *
 */
-/**
- *
- * Contact  Page Styles
- *
- */
-#Title-Container {
-  background: url(/wp-content/uploads/2017/07/congruent_pentagon.jpg) fixed; }
-
-#Contact-Main-Content {
-  background: url(/wp-content/uploads/2017/07/congruent_pentagon.jpg) fixed; }
-  #Contact-Main-Content h2 {
-    font-weight: 400; }
-  @media (max-width: 400px) {
-    #Contact-Main-Content .left-text-content .contact-social {
-      padding-left: 10px; } }
-  #Contact-Main-Content .left-text-content .contact-social li {
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    border: 1px solid #484a4b;
-    background-color: #484a4b;
-    text-align: center; }
-    #Contact-Main-Content .left-text-content .contact-social li:hover {
-      background-color: #87cfbe; }
-    @media (min-width: 790px) and (max-width: 1000px) {
-      #Contact-Main-Content .left-text-content .contact-social li {
-        width: 50px;
-        height: 50px; } }
-    @media (max-width: 500px) {
-      #Contact-Main-Content .left-text-content .contact-social li {
-        width: 50px;
-        height: 50px; } }
-    #Contact-Main-Content .left-text-content .contact-social li a i {
-      padding-top: 2rem; }
-      @media (min-width: 790px) and (max-width: 1000px) {
-        #Contact-Main-Content .left-text-content .contact-social li a i {
-          padding-top: 1rem; } }
-      @media (max-width: 500px) {
-        #Contact-Main-Content .left-text-content .contact-social li a i {
-          padding-top: 1rem; } }
-  #Contact-Main-Content .left-text-content .headline-info {
-    padding-top: 5rem; }
-  #Contact-Main-Content .left-text-content .content-info {
-    padding-left: 40px; }
-    @media (max-width: 400px) {
-      #Contact-Main-Content .left-text-content .content-info {
-        padding-left: 10px; } }
-    #Contact-Main-Content .left-text-content .content-info p {
-      font-size: 2.3rem;
-      line-height: 3rem; }
-      @media (max-width: 400px) {
-        #Contact-Main-Content .left-text-content .content-info p {
-          font-size: 2rem; } }
-      @media (min-width: 790px) and (max-width: 1000px) {
-        #Contact-Main-Content .left-text-content .content-info p {
-          font-size: 1.5rem; } }
-  #Contact-Main-Content .right-form-content #gform_submit_button_1 {
-    border: 1rem solid #484a4b;
-    background-color: #484a4b;
-    color: white;
-    width: 100%; }
-
 /**
  *
  * Side Bar Styles

@@ -7,7 +7,7 @@
 #praise-page-header {
 
 	.overlay {
-		background-color: rgba( $imb-secondary, .7 );
+		background-color: rgba( $imb-primary, .6 );
 	}
 
 	.praise-header-image {
@@ -91,7 +91,7 @@
  */
 
 #praise-text-info-block {
-	background: url(/wp-content/uploads/2017/05/top-hero-bg-400x400-lightest.jpg) fixed;
+	background: url(/wp-content/uploads/2017/08/top-hero-bg-400x400-lightest.jpg) fixed;
 	padding-top: 5rem;
 	padding-bottom: 5rem;	
 
@@ -138,7 +138,7 @@
 	min-height: 400px;
 	padding-top: 4rem;
 	background-color: $imb-secondary;
-	background: url(/wp-content/uploads/2017/05/background-imb-blg-social.jpg) fixed;
+	background: url(/wp-content/uploads/2017/08/background-imb-blg-social.jpg) fixed;
 
 
 	@media ( min-width: 500px ) {
@@ -194,9 +194,15 @@
 		.flex-item {
 			margin-bottom: 1rem;
 			box-shadow: 2px 2px 6px lightgray;
+			background: url('/wp-content/uploads/2017/07/skulls-white.jpg') fixed;
+
+			&:hover {
+				box-shadow: inset 2px 2px 16px lightgray;
+
+			}
 		}
 
-		@media ( min-width: 900px ) {
+		@media ( min-width: 992px ) {
 			@include display(flex);
 			@include justify-content(center);
 				flex-wrap: wrap;
@@ -249,6 +255,12 @@
 		.flex-item {
 			margin-bottom: 1rem;
 			box-shadow: 2px 2px 6px lightgray;
+
+
+			&:hover {
+				box-shadow: inset 2px 2px 16px lightgray;
+
+			}			
 		}
 
 		@media ( min-width: 900px ) {
