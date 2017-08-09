@@ -174,62 +174,6 @@ get_header('simple'); ?>
 				</p>
 			</article>
 
-<!-- 			<article class="text-box flex-item text-center">
-				<figure>
-					<img class="img-responsive img-circle center-block" src="/wp-content/uploads/2017/07/kelly-soto-150x150.jpg" alt="">
-				</figure>
-				<h4 class="subheading">Consultant and Network Marketer</h4>
-				<h2 class="heading">Kelly Soto</h2>
-				<p class="praise-text">
-					Tiana is the real deal. We are in the early stages of my project but I'm so confident that I made the choice to work with her! In our very first session, she has already impressed me beyond belief. Tiana is honest and caring and she can see your vision before you can even see it! My super rough draft already feels like me! 
-				</p>
-			</article>
-
-			<article class="text-box flex-item text-center">
-				<figure>
-					<img class="img-responsive img-circle center-block" src="/wp-content/uploads/2017/07/Jenny-Giblin-150x150.jpg" alt="">
-				</figure>
-				<h4 class="subheading">Yogi and Entrepreneur</h4>
-				<h2 class="heading">Jenny Giblin</h2>
-				<p class="praise-text">
-					I am so lucky to have connected with Tiana! Her advice was exactly what I Needed both personally and professionally. Talking to her is like talking to an old friend who also happens to be an expert at what she does! I highly, highly recommend her!
-				</p>
-			</article>
-
-			<article class="text-box flex-item text-center">
-				<figure>
-					<img class="img-responsive img-circle center-block" src="/wp-content/uploads/2017/07/Barry-Johnson-150x150.jpg" alt="">
-				</figure>
-				<h4 class="subheading">Author and Consultant</h4>
-				<h2 class="heading"> Barry John Johnson</h2>
-				<p class="praise-text">
-					Tiana has provided me with website development services. She offers more than simply tech skills. She is creative & process oriented so that your project evolves and is further defined making for a better product than planned. In the end, she wants to make sure that you are completely happy without feeling like you have been nickel and dimed for each small change or interaction. HIGHLY RECOMMENDED.
-				</p>
-			</article>
-
-			<article class="text-box flex-item text-center">
-				<figure>
-					<img class="img-responsive img-circle center-block" src="/wp-content/uploads/2017/07/Charlene-Reed-150x150.jpg" alt="">
-				</figure>
-				<h4 class="subheading">Interior Design Professor at Orange Coast College, Huntington Beach, CA</h4>
-				<h2 class="heading">Charlene Reed</h2>
-				<p class="praise-text">
-					I’ve worked with Firefly Media Services remotely on a website set-up and various consultations for social media marketing. Tiana is professional and knowledgeable about WordPress, graphics and social media marketing.
-					I’m thankful to have found someone who can accommodate a variety of services in whatever capacity I’m in need of, from full-service website and graphic design to hourly consultative phone calls about marketing strategies. Easy to work with remotely, I highly recommend this company.
-				</p>
-			</article>
-
-			<article class="text-box flex-item text-center">
-				<figure>
-					<img class="img-responsive img-circle center-block" src="/wp-content/uploads/2017/07/Donna-Heinbach-150x150.jpg" alt="">
-				</figure>
-				<h4 class="subheading">Business Coaching</h4>
-				<h2 class="heading">Consultant and Nurse</h2>
-				<p class="praise-text">
-					Tiana has been so helpful in the development of my website and so so wonderful with explaining this process that I understand. She has the passion of helping others and is A+ in this. She truly loves what she does and shares with you all the steps needed to be successful. I am glad I invested in myself with her guidance.
-				</p>
-			</article> -->
-
 		</div>
 
 
@@ -286,6 +230,27 @@ get_header('simple'); ?>
 	<main class="container">
 		
 		<div class="flex-container">
+
+			<!-- <article class="text-box flex-item text-center" v-for="post in posts">
+				<figure class="video-box">
+
+				    <div class="video">
+
+				        <div class="embed-responsive embed-responsive-16by9">
+							
+							<script src="https://fast.wistia.com/embed/medias/qbk5zsvwii.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:50.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_qbk5zsvwii videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
+
+				        </div>
+
+				    </div>
+
+				</figure>				
+				<h4 class="subheading">{{ post.acf.client_description }}</h4>
+				<h2 class="heading">{{ post.title.rendered }}</h2>
+				<p class="praise-text">
+					{{ post.acf.client_content }}
+				</p>
+			</article> -->
 			
 			<article class="text-box flex-item text-center">
 				<figure class="video-box">
@@ -329,14 +294,14 @@ get_header('simple'); ?>
 				</p>
 			</article>
 
-			<!-- <article class="text-box flex-item text-center">
+			<article class="text-box flex-item text-center">
 				<figure class="video-box">
 
 				    <div class="video">
 
 				        <div class="embed-responsive embed-responsive-16by9">
 
-				            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ChbghzEJQL8"></iframe>
+				            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eJnWPhSQjPs?wmode=opaque&autoplay=0&loop=1&controls=1&showinfo=0&rel=0"></iframe>
 
 				        </div>
 
@@ -351,12 +316,8 @@ get_header('simple'); ?>
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. 
 				</p>
-			</article> -->
+			</article>
 
-		</div>
-
-		<div class="load-more-btn-box row text-center hide">
-			<a class="btn btn-success btn-lg" href="#">LOAD MORE</a>
 		</div>
 
 	</main>	
@@ -401,27 +362,24 @@ get_header('simple'); ?>
 	
 </section>
 
+<!--=================================================================
+=            Vue JS Code For Praise & Video Praise Loops            =
+==================================================================-->
+
 <script type="text/javascript">
 
 new Vue ({
   el: '#normal-praise-loop',
   data: {
-    videoTitle:     'VIDEOS',  
-    news:           'LATEST NEWS',  
+
     ajax:           '<?php echo get_site_url(); ?>',
     posts:          '',
-    vids:           '',
-    singlePost:     [''],
-    show:           false,
-    id:             '' 
+
   },  
   created: function() {
 
     this.getNews();
-    // this.getVids();
 
-    this.getSingle(758);
-    // this.getSingleVid(3310);
   },
   methods: {
      getNews: function() {
@@ -433,9 +391,6 @@ new Vue ({
          axios.get( app.ajax + '/wp-json/wp/v2/testimonials-api?per_page=100')
           .then(function(response) {
             app.posts = response.data;
-            app.id = app.posts[0].id;
-
-            console.log(app.posts);
 
             return app.posts;
         })
@@ -444,123 +399,49 @@ new Vue ({
          });
 
      },
-     
-     getSingle: function(id, show) {
+  }
+
+});
+
+new Vue ({
+  el: '#video-praise-loop',
+  data: {
+
+    ajax:           '<?php echo get_site_url(); ?>',
+    posts:          '',
+
+  },  
+  created: function() {
+
+    this.getNews();
+
+  },
+  methods: {
+     getNews: function() {
 
         var app = this;
 
-        console.log("this is id: " + id);
-
-         axios.get( app.ajax + '/wp-json/wp/v2/posts/' + id)
+         // axios.get( app.ajax + '/wp-json/wp/v2/posts?categories=5&per_page=100')
+         // axios.get( app.ajax + '/wp-json/wp/v2/posts?per_page=100')
+         axios.get( app.ajax + '/wp-json/wp/v2/video-testimonials-api?per_page=100')
           .then(function(response) {
-            // app.singlePostData = response.data;
-            // console.log(response.data.title.rendered);
-            // console.log(response.data);
-            
+            app.posts = response.data;
 
-            app.show = true;
-
-            app.singlePost = {
-
-
-              id:             response.data.id,
-              title:          response.data.title.rendered,
-              content:        response.data.content.rendered,
-              featured_full:  response.data.featured_full 
-            }
-
-            // console.log( app.singlePost );
-
-            return app.singlePost;
-
-            app.show = false;
+            return app.posts;
         })
          .catch(function(error){
            console.log(error);
-         })
+         });
+
      },
-
-
-     getSingleNews: function(id, show) {
-
-        var app = this;
-
-        console.log("this is id: " + id);
-
-         axios.get( app.ajax + '/wp-json/wp/v2/posts/' + id)
-          .then(function(response) {
-            // app.singlePostData = response.data;
-            // console.log(response.data.title.rendered);
-            // console.log(response.data);
-            
-
-            app.show = true;
-
-            app.singlePost = {
-
-
-              id:             response.data.id,
-              title:          response.data.title.rendered,
-              content:        response.data.content.rendered,
-              featured_full:  response.data.featured_full 
-            }
-
-            // console.log( app.singlePost );
-
-            return app.singlePost;
-
-            app.show = false;
-        })
-         .catch(function(error){
-           console.log(error);
-         })
-     },
-
-
-         
   }
 
 });
 
 
-// new Vue ({
-//   el: '#app',
-//   data: {
-//     message:  'Vue 2.0 is Working',
-//     ajax:     'Posts Should Display Here',
-//     posts:    ''
-//   },
-//   methods: {
-//     selectFruit(post) {
-//       this.message = post;
-//     }
-//   },
-//   created: function() {
-//     // console.log('created ran');
-//     this.$http.get('http://dmol.local/wp-json/wp/v2/posts/')
-//       .then(function(response){
-//           console.log(response);
-
-//           this.posts = response.data;
-//       });
-//   }
-// });
 
 
 
-
-// new Vue ({
-//   el: '#app',
-//   data: {
-//     message: 'Hello Vue 2.0',
-//     fruits: [ 'apple', 'Microsoft', 'VMware', 'OSx' ]
-//   },
-//   methods: {
-//     selectFruit(fruit) {
-//       this.message = fruit;
-//     }
-//   }
-// });  
 </script>
 
 <?php
