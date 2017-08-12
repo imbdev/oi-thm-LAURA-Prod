@@ -1,7 +1,6 @@
 <?php
 /**
  * The template for displaying all pages.
- * Template Name: Testimonial Page Template
  *
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
@@ -129,28 +128,8 @@ get_header('simple'); ?>
 				<h1 class="heading"><?php the_field('praise_optin_one_headline'); ?></h1>
 
 				<div class="leadbox-embed center-block">
-
-					<?php if( have_rows('testimonial_optin_button_block') ) : ?>
-
-			    		<?php while ( have_rows('testimonial_optin_button_block') ) :  the_row(); ?>
-
-				    		<?php if ( get_row_layout() == 'lead_pages_button' ) : ?>	
-
-								<?php the_sub_field('lead_pages_button_code'); ?>
-				    			
-
-							<?php elseif( get_row_layout() == 'normal_button_with_url' ) :  ?>
-
-
-								<a class="btn btn-primary btn-lg" href="<?php the_sub_field('normal_button_url'); ?>" target="_blank"><?php the_sub_field('normal_button_text'); ?></a>
-						      	
-							
-							<?php endif; ?>
-
-						<?php endwhile; ?>
-
-					<?php endif; ?>		
-
+					<?php the_field('praise_optin_one_leadpages_code'); ?>
+					
 				</div>			
 				
 			</article>
@@ -217,33 +196,12 @@ get_header('simple'); ?>
 
 			<article class="text-block text-center">
 
-				<h3 class="sub-heading"><?php the_field('praise_optin_one_subheadline'); ?></h3>
+				<h3 class="sub-heading">JOIN OVER 200,000 SUBSCRIBERS</h3>
 
-				<h1 class="heading"><?php the_field('praise_optin_one_headline'); ?></h1>
+				<h1 class="heading">GET FREE UPDATES</h1>
 
 				<div class="leadbox-embed center-block">
-
-					<?php if( have_rows('testimonial_optin_button_block') ) : ?>
-
-			    		<?php while ( have_rows('testimonial_optin_button_block') ) :  the_row(); ?>
-
-				    		<?php if ( get_row_layout() == 'lead_pages_button' ) : ?>	
-
-								<?php the_sub_field('lead_pages_button_code'); ?>
-				    			
-
-							<?php elseif( get_row_layout() == 'normal_button_with_url' ) :  ?>
-
-
-								<a class="btn btn-primary btn-lg" href="<?php the_sub_field('normal_button_url'); ?>" target="_blank"><?php the_sub_field('normal_button_text'); ?></a>
-						      	
-							
-							<?php endif; ?>
-
-						<?php endwhile; ?>
-
-					<?php endif; ?>		
-
+					<script src="//static.leadpages.net/leadboxes/current/embed.js" async defer></script> <button data-leadbox-popup="14e99a133f72a2:142918c46b46dc" style="background: rgb(67, 72, 117);border-color: rgb(67, 72, 117);border-radius: 20px;color: #FFFFFF;display: inline-block;vertical-align: middle;padding: 16px 32px;min-width: 192px;border: 1px solid rgb(67, 72, 117);font-size: 1rem;font-family: Helvetica, Arial, sans-serif;text-align: center;outline: 0;line-height: 1;cursor: pointer;-webkit-transition: background 0.3s, color 0.3s, border 0.3s;transition: background 0.3s, color 0.3s, border 0.3s;  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);">CLICK HERE TO SUBSCRIBE</button> 									
 				</div>			
 				
 			</article>
@@ -253,7 +211,7 @@ get_header('simple'); ?>
 
 			<figure class="image-block">
 				
-				<img class="optin-right-image img-responsive" src="<?php the_field('praise_optin_one_image'); ?>" alt="">
+				<img class="optin-right-image img-responsive" src="/wp-content/uploads/2017/08/mical-praise-OPT-IN-350x350.png" alt="">
 
 			</figure>
 			
@@ -273,25 +231,42 @@ get_header('simple'); ?>
 		<div class="flex-container">
 
 			<article class="text-box flex-item text-center" v-for="post in posts">
-
 				<figure class="video-box">
 
 				    <div class="video">
 
-				        <div class="embed-responsive embed-responsive-16by9" v-if="post.acf.choose_video_type[0].acf_fc_layout === wistia">
+				    	<?php if( have_rows('choose_video_type') ) : ?>
 
-				        	<div v-html="post.acf.choose_video_type[0].wistia_video_code "></div>  		
+				    		<?php while ( have_rows('choose_video_type') ) :  the_row(); ?>
 
-							<!-- // <script src="https://fast.wistia.com/embed/medias/qbk5zsvwii.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:50.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_qbk5zsvwii videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div> -->
+					    		<?php if ( get_row_layout() == 'wistia_video' ) : ?>	
 
-				        </div>
+					    			<?php the_sub_field('wistia_video_code'); ?>
 
-				        <div class="embed-responsive embed-responsive-16by9" v-else-if="post.acf.choose_video_type[0].acf_fc_layout === youtube">
+							        <div class="embed-responsive embed-responsive-16by9">
+
+										
+										<script src="https://fast.wistia.com/embed/medias/qbk5zsvwii.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:50.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_qbk5zsvwii videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
+
+							        </div>
+
+								<?php elseif( get_row_layout() == 'youtube_video' ) :  ?>
+
+					    			<?php the_sub_field('youtube_video_id_only'); ?>
+
+
+							        <div class="embed-responsive embed-responsive-16by9">
+
+							            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eJnWPhSQjPs?wmode=opaque&autoplay=0&loop=1&controls=1&showinfo=0&rel=0"></iframe>
+
+							        </div>
 								
-				            <iframe class="embed-responsive-item" :src="url_1+post.acf.choose_video_type[0].youtube_video_id_only+url_2"></iframe>
+								<?php endif; ?>
 
-				        </div>
-					
+							<?php endwhile; ?>
+
+						<?php endif; ?>		
+
 				    </div>
 
 				</figure>	
@@ -301,9 +276,73 @@ get_header('simple'); ?>
 				<p class="praise-text">
 					{{ post.acf.client_content }}
 				</p>
-
 			</article>
 			
+			<!-- <article class="text-box flex-item text-center">
+				<figure class="video-box">
+
+				    <div class="video">
+
+				        <div class="embed-responsive embed-responsive-16by9">
+							
+							<script src="https://fast.wistia.com/embed/medias/qbk5zsvwii.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:50.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_qbk5zsvwii videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
+
+				        </div>
+
+				    </div>
+
+				</figure>				
+				<h4 class="subheading">Singer & Song Writer</h4>
+				<h2 class="heading">Cathy Heller</h2>
+				<p class="praise-text">
+					Cathy is the owner of Catch The Moon Music, a leading Ad Agency and TV/Film Music Placement company in Los Angeles, California. Since implementing Bullseye Funnels, Cathy closed $85,000 in sales in 2 weeks with the Bullseye funnel system as well as added over 1200 new leads in 30 days !
+				</p>
+			</article>
+			
+			<article class="text-box flex-item text-center">
+				<figure class="video-box">
+
+				    <div class="video">
+
+				        <div class="embed-responsive embed-responsive-16by9">
+
+							<script src="https://fast.wistia.com/embed/medias/encvlvsx52.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_encvlvsx52 videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
+				        
+				        </div>
+
+				    </div>
+
+				</figure>				
+				<h4 class="subheading">Musician & Entrepreneur</h4>
+				<h2 class="heading">Glenn Allen</h2>
+				<p class="praise-text">
+					Glenn is the owner of I Am An Orchestra, a leading Music Theory and Songwriting company. Since implementing Bullseye Funnels, Glenn finally pieced together his entire online marketing funnel for new leads and sales.
+				</p>
+			</article>
+
+			<article class="text-box flex-item text-center">
+				<figure class="video-box">
+
+				    <div class="video">
+
+				        <div class="embed-responsive embed-responsive-16by9">
+
+				            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eJnWPhSQjPs?wmode=opaque&autoplay=0&loop=1&controls=1&showinfo=0&rel=0"></iframe>
+
+				        </div>
+
+				    </div>
+
+				</figure>				
+				<h4 class="subheading">Publicity & Visibility</h4>
+				<h2 class="heading">"My Income Goal Trippled"</h2>
+				<p class="praise-text">
+					consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. 
+				</p>
+			</article> -->
 
 		</div>
 
@@ -324,33 +363,12 @@ get_header('simple'); ?>
 
 			<article class="text-block text-center">
 
-				<h3 class="sub-heading"><?php the_field('praise_optin_one_subheadline'); ?></h3>
+				<h3 class="sub-heading">JOIN OVER 200,000 SUBSCRIBERS</h3>
 
-				<h1 class="heading"><?php the_field('praise_optin_one_headline'); ?></h1>
+				<h1 class="heading">GET FREE UPDATES</h1>
 
 				<div class="leadbox-embed center-block">
-
-					<?php if( have_rows('testimonial_optin_button_block') ) : ?>
-
-			    		<?php while ( have_rows('testimonial_optin_button_block') ) :  the_row(); ?>
-
-				    		<?php if ( get_row_layout() == 'lead_pages_button' ) : ?>	
-
-								<?php the_sub_field('lead_pages_button_code'); ?>
-				    			
-
-							<?php elseif( get_row_layout() == 'normal_button_with_url' ) :  ?>
-
-
-								<a class="btn btn-primary btn-lg" href="<?php the_sub_field('normal_button_url'); ?>" target="_blank"><?php the_sub_field('normal_button_text'); ?></a>
-						      	
-							
-							<?php endif; ?>
-
-						<?php endwhile; ?>
-
-					<?php endif; ?>		
-
+					<script src="//static.leadpages.net/leadboxes/current/embed.js" async defer></script> <button data-leadbox-popup="14e99a133f72a2:142918c46b46dc" style="background: rgb(67, 72, 117);border-color: rgb(67, 72, 117);border-radius: 20px;color: #FFFFFF;display: inline-block;vertical-align: middle;padding: 16px 32px;min-width: 192px;border: 1px solid rgb(67, 72, 117);font-size: 1rem;font-family: Helvetica, Arial, sans-serif;text-align: center;outline: 0;line-height: 1;cursor: pointer;-webkit-transition: background 0.3s, color 0.3s, border 0.3s;transition: background 0.3s, color 0.3s, border 0.3s;  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);">CLICK HERE TO SUBSCRIBE</button> 									
 				</div>			
 				
 			</article>
@@ -360,11 +378,11 @@ get_header('simple'); ?>
 
 			<figure class="image-block">
 				
-				<img class="optin-right-image img-responsive" src="<?php the_field('praise_optin_one_image'); ?>" alt="">
+				<img class="optin-right-image img-responsive" src="/wp-content/uploads/2017/08/mical-praise-OPT-IN-350x350.png" alt="">
 
 			</figure>
 			
-		</div> 
+		</div>
 
 	</main>
 	
@@ -413,17 +431,10 @@ new Vue ({
 
 new Vue ({
   el: '#video-praise-loop',
-  data(){
+  data: {
 
-  	return {
-
-    	ajax:       '<?php echo get_site_url(); ?>',
-    	posts:      '',
-    	youtube: 	'youtube_video',
-    	wistia: 	'wistia_video',
-    	url_1: 		'https://www.youtube.com/embed/',
-    	url_2: 		'?wmode=opaque&autoplay=0&loop=1&controls=1&showinfo=0&rel=0'
-	}
+    ajax:           '<?php echo get_site_url(); ?>',
+    posts:          '',
 
   },  
   created: function() {
@@ -436,6 +447,8 @@ new Vue ({
 
         var app = this;
 
+         // axios.get( app.ajax + '/wp-json/wp/v2/posts?categories=5&per_page=100')
+         // axios.get( app.ajax + '/wp-json/wp/v2/posts?per_page=100')
          axios.get( app.ajax + '/wp-json/wp/v2/video-testimonials-api?per_page=100')
           .then(function(response) {
             app.posts = response.data;
@@ -450,6 +463,9 @@ new Vue ({
   }
 
 });
+
+
+
 
 
 </script>

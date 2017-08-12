@@ -171,16 +171,16 @@ function moose_frame_scripts() {
 	wp_enqueue_style( 'moose-masonry-style', get_template_directory_uri() . '/_masonry-css/style.css', '', '1.0' );
 	wp_enqueue_style( 'moose-masonry-media-query-style', get_template_directory_uri() . '/_masonry-css/media_query.css', '', '1.0' );
 
-	wp_enqueue_script( 'moose-frame-jq-js', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '20120206', false );
+	wp_enqueue_script( 'moose-frame-jq-js', get_template_directory_uri() .'/js/jquery.3.2.1.min.js', array(), '20120206', false );
 	wp_enqueue_script( 'moose-frame-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '20120206', true );
 	wp_enqueue_script( 'moose-frame-wow-js', get_template_directory_uri() . '/js/wow.min.js', array(), '20120206', true );
 	wp_enqueue_script( 'moose-frame-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
-	wp_enqueue_script( 'moose-image-loaded-js', 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js', array(), '20120206', true );
-	wp_enqueue_script( 'moose-masonry-js', '//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js', array(), '20120206', true );
+	wp_enqueue_script( 'moose-image-loaded-js', get_template_directory_uri() .'/_masonry-js/imagesloaded.pkgd.min.js', array(), '20120206', true );
+	wp_enqueue_script( 'moose-masonry-js', get_template_directory_uri() .'/js/masonry.pkgd.3.1.5.min.js', array(), '20120206', true );
+	wp_enqueue_script( 'moose-frame-vue-js', get_template_directory_uri() .'/js/vue.2.4.2.min.js', array(), '20120206', false );
+	wp_enqueue_script( 'moose-frame-axios-js', get_template_directory_uri() .'/js/axios.min-0.12.0.js', array(), '20120206', false );
 	wp_enqueue_script( 'moose-frame-script-js', get_template_directory_uri() . '/js/script.js', array(), '20120206', true );
-	wp_enqueue_script( 'moose-frame-vue-js', 'https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.4/vue.js', array(), '20120206', false );
-	wp_enqueue_script( 'moose-frame-axios-js', 'https://unpkg.com/axios@0.12.0/dist/axios.min.js', array(), '20120206', false );
 	// wp_enqueue_script( 'moose-frame-slimscroll-js', get_template_directory_uri() . '/js/jquery.slimscroll.min.js', array('jquery'), '20120206', true );
 	// wp_enqueue_script( 'moose-frame-vuenews-js', get_template_directory_uri() . '/js/app-vue-news.js', array(), '20120206', true );
 	// wp_enqueue_script( 'moose-frame-vuetestimonials-js', get_template_directory_uri() . '/js/app-vue-testimonials.js', array(), '20120206', true );

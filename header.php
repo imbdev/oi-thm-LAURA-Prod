@@ -43,8 +43,7 @@
 <?php
     // $front_header_image = get_field('front_header_image', 3563); // 1476 is post id                               
     $blog_header_image = get_field('page_header_image', 643); // 1476 is post id                               
-    $siteLogo = get_field('site_logo', 3563); // 1476 is post id                               
-    $size = 'full'; // (thumbnail, medium, large, full or custom size)
+	$siteLogo = get_field( 'site_logo_image', 5 );
 ?>	
 
 <body <?php body_class(); ?>>
@@ -100,7 +99,7 @@
 			            <span class="icon-bar"></span>
 			            <span class="icon-bar"></span>
 			        </button>
-			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img id="logo" src="/wp-content/uploads/2017/06/JenniferBrownLogo-450x144.png"></a>
+			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img id="logo" src="<?php echo $siteLogo ?>"></a>
 			    <!-- <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span class="logo-text">INSPIRED <span class="tiana-txt">MOMMY</span> BOSS</span> </a> -->
 			    </div>
 

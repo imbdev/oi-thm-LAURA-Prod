@@ -41,7 +41,9 @@
 
 <?php
     $hero_desktop_bg_image = get_field('hero_background_image_desktop'); // 1476 is post id                               
-    $hero_mobile_bg_image = get_field('hero_background_image_mobile'); // 1476 is post id                               
+    $hero_mobile_bg_image = get_field('hero_background_image_mobile'); // 1476 is post id     
+    $siteLogo = get_field( 'site_logo_image', 5 ); // 1476 is post id                               
+
 ?>	
 
 <body <?php body_class(); ?>>
@@ -89,7 +91,7 @@
 			            <span class="icon-bar"></span>
 			            <span class="icon-bar"></span>
 			        </button>
-			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img id="logo" src="/wp-content/uploads/2017/06/JenniferBrownLogo-450x144.png"></a>
+			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img id="logo" src="<?php echo $siteLogo; ?>"></a>
 			    <!-- <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span class="logo-text">INSPIRED <span class="tiana-txt">MOMMY</span> BOSS</span> </a> -->
 			    </div>
 
