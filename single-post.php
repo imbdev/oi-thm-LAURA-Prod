@@ -9,6 +9,16 @@
  */
 
 get_header('blog'); ?>
+<style type="text/css" media="screen">
+	html,body
+	{
+	    width: 100%;
+	    height: 100%;
+	    margin: 0px;
+	    padding: 0px;
+	    overflow-x: hidden; 
+	}	
+</style>
 <section class="container">
 <!-- <h1>Blog Single Only</h1> -->
 

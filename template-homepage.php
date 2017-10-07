@@ -33,7 +33,7 @@ get_header('home'); ?>
 
             <div class="modal-header" style="background: #a6d287; color: white;">
 
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close pull-left" data-dismiss="modal" aria-label="Close" style="color: black; font-size: 2rem !important;"><span aria-hidden="true">X</span></button>
 
                 <h4 class="modal-title text-center" id="myModalLabel" style="color: white;">www.laurahale.com</h4>
 
@@ -123,7 +123,12 @@ get_header('home'); ?>
 				</p>
 
 				<div class="btn-holder text-center">
-					<a class="btn btn-primary btn-lg" href="<?php the_field('optin_center_button_url') ?>"><?php the_field('optin_center_button_text'); ?></a>
+					<!-- <a class="btn btn-primary btn-lg" href="<?php the_field('optin_center_button_url') ?>"><?php the_field('optin_center_button_text'); ?></a> -->
+					<?php the_field('optin_center_button_text'); ?>
+					<!-- // <script src="//static.leadpages.net/leadboxes/current/embed.js" async defer></script> <button data-leadbox-popup="14121c973f72a2:146923be0946dc" data-leadbox-domain="lauramhale.lpusercontent.com" style="background: rgb(189, 0, 170);border-color: rgb(189, 0, 170);border-radius: 20px;color: #FFFFFF;display: inline-block;vertical-align: middle;padding: 16px 32px;min-width: 192px;border: 1px solid rgb(189, 0, 170);font-size: 1rem;font-family: Helvetica, Arial, sans-serif;text-align: center;outline: 0;line-height: 1;cursor: pointer;-webkit-transition: background 0.3s, color 0.3s, border 0.3s;transition: background 0.3s, color 0.3s, border 0.3s;  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);">Click here to subscribe</button> 					 -->
+					<!-- // <script src="//static.leadpages.net/leadboxes/current/embed.js" async defer></script> <button data-leadbox-popup="14121c973f72a2:146923be0946dc" style="background: rgb(189, 0, 170);border-color: rgb(189, 0, 170);border-radius: 20px;color: #FFFFFF;display: inline-block;vertical-align: middle;padding: 16px 32px;min-width: 192px;border: 1px solid rgb(189, 0, 170);font-size: 1rem;font-family: Helvetica, Arial, sans-serif;text-align: center;outline: 0;line-height: 1;cursor: pointer;-webkit-transition: background 0.3s, color 0.3s, border 0.3s;transition: background 0.3s, color 0.3s, border 0.3s;">CLICK TO SUBSCRIBE</button> 				 -->
+					<!-- // <script src="//static.leadpages.net/leadboxes/current/embed.js" async defer></script> <button data-leadbox-popup="14121c973f72a2:146923be0946dc" style="background: rgb(189, 0, 170);border-color: rgb(189, 0, 170);border-radius: 20px;color: #FFFFFF;display: inline-block;vertical-align: middle;padding: 16px 32px;min-width: 192px;border: 1px solid rgb(189, 0, 170);font-size: 1rem;font-family: Helvetica, Arial, sans-serif;text-align: center;outline: 0;line-height: 1;cursor: pointer;-webkit-transition: background 0.3s, color 0.3s, border 0.3s;transition: background 0.3s, color 0.3s, border 0.3s;  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.6);">CLICK TO SUBSCRIBE</button>  -->
+				
 				</div>
 				
 				

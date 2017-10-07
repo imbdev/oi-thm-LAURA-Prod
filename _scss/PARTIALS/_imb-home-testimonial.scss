@@ -7,6 +7,11 @@
 	// background-image: url(/wp-content/uploads/2017/07/background-transparent-awsome.jpg);
 	min-height: 700px;
 
+	@media ( max-width: 550px ) {
+		min-height: 100px;
+		// border: 2px dotted red;
+	}
+
 	.content-box {
 
 		#testimonial-slider {
@@ -30,6 +35,11 @@
 				}
 				.carousel-inner {
 					min-height: 430px;
+
+					@media ( max-width: 550px ) {
+						min-height: 100px;
+						// border: 2px dotted red;
+					}
 				}
 				.carousel-control.left {
 					background-image: none !important;
@@ -45,6 +55,11 @@
 					i {
 						font-size: 4rem;
 						color: lighten( $gray-light, 10% );
+
+						@media ( max-width: 550px ) {
+							padding-top: 2rem;
+							// border: 2px dotted red;
+						}						
 					}
 
 					h4 {

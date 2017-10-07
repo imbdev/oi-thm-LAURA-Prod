@@ -1,0 +1,338 @@
+{
+    "key": "group_597583960df4a",
+    "title": "HOME - OPTIN ROADMAP",
+    "fields": [
+        {
+            "key": "field_597584247bc6c",
+            "label": "OPTIN LEFT",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_597584747bc6d",
+            "label": "OPTIN LEFT ICON",
+            "name": "optin_left_icon",
+            "type": "text",
+            "instructions": "For an Apple Icon, type: fa-apple\r\n[Find out more here:\r\nhttp:\/\/fontawesome.io\/icon\/apple\/ <br>\r\nhttp:\/\/fontawesome.io\/icons\/]",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "fa-calendar",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_597584ee7bc6e",
+            "label": "OPTIN LEFT HEADLINE",
+            "name": "optin_left_headline",
+            "type": "text",
+            "instructions": "Add the Headline text here <br><br><br>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Events",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_597584fe7bc6f",
+            "label": "OPTIN LEFT TEXT",
+            "name": "optin_left_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5975850f7bc70",
+            "label": "OPTIN LEFT BUTTON TEXT",
+            "name": "optin_left_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "READ MORE",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_597585257bc71",
+            "label": "OPTIN LEFT BUTTON URL",
+            "name": "optin_left_button_url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "http:\/\/google.com",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59758dc985586",
+            "label": "OPTIN CENTER",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59758de62066c",
+            "label": "OPTIN CENTER ICON",
+            "name": "optin_center_icon",
+            "type": "text",
+            "instructions": "For an Apple Icon, type: fa-apple\r\n[Find out more here:\r\nhttp:\/\/fontawesome.io\/icon\/apple\/ <br>\r\nhttp:\/\/fontawesome.io\/icons\/]",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "fa-calendar",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59758e24f9812",
+            "label": "OPTIN CENTER HEADLINE",
+            "name": "optin_center_headline",
+            "type": "text",
+            "instructions": "Add the Headline text here <br><br><br>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Events",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59758e6b347d8",
+            "label": "OPTIN CENTER TEXT",
+            "name": "optin_center_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_59758e90ed732",
+            "label": "OPTIN CENTER BUTTON TEXT",
+            "name": "optin_center_button_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_597595d1b4f08",
+            "label": "OPTIN RIGHT",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_597595f55d56f",
+            "label": "OPTIN RIGHT ICON",
+            "name": "optin_right_icon",
+            "type": "text",
+            "instructions": "For an Apple Icon, type: fa-apple\r\n[Find out more here:\r\nhttp:\/\/fontawesome.io\/icon\/apple\/ <br>\r\nhttp:\/\/fontawesome.io\/icons\/]",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "fa-calendar",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5975962ad7c7b",
+            "label": "OPTIN RIGHT HEADLINE",
+            "name": "optin_right_headline",
+            "type": "text",
+            "instructions": "Add the Headline text here <br><br><br>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Events",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5975965295d41",
+            "label": "OPTIN RIGHT TEXT",
+            "name": "optin_right_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5975968fd3d1e",
+            "label": "OPTIN RIGHT BUTTON TEXT",
+            "name": "optin_right_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "READ MORE",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_597596b628d12",
+            "label": "OPTIN RIGHT BUTTON URL",
+            "name": "optin_right_button_url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "http:\/\/google.com",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-homepage.php"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1507343411
+}

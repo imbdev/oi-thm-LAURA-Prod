@@ -245,23 +245,11 @@ get_header('about'); ?>
 				
 			</h1>
 
-			<?php if( have_rows( 'about_flexible_optin_content' ) ) : ?>
-				<?php while ( have_rows( 'about_flexible_optin_content' ) ) : the_row(); ?>
+			<?php the_field('enter_optin_form_html_code'); ?>
+			<br>
+			<br>
 
-					<?php if( get_row_layout() == 'form_shortcode' ) : ?>
-
-						<?php echo do_shortcode( get_sub_field( 'enter_optin_form_shortcode' ) ); ?>
-
-					<?php elseif( get_row_layout() == 'form_html_&_js_code' ) : ?>	
-
-						<?php the_sub_field('enter_optin_form_html_code'); ?>
-						<br>
-						<br>
-
-					<?php endif; ?>
-
-				<?php endwhile; ?>
-			<?php endif; ?>		
+			
 
 		</article>
 		<article class="col-sm-2 col-md-2 col-lg-2"></article>

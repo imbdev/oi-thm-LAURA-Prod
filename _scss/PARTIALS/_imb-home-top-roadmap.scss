@@ -60,14 +60,16 @@
 			.headline {
 				margin-top: 30%;
 				color: lighten( $imb-secondary, 10% );
+				// border: 1px solid $imb-primary;
+				min-height: 150px;
 			}
 			.text-only {
 				color: white;
-				min-height: 250px;
+				min-height: 200px;
 				// border: 3px dotted white;
 			}
 			.btn-holder {
-				margin-top: 2rem;
+				// margin-top: 2rem;
 				margin-bottom: 2rem;
 			}
 

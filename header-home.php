@@ -115,7 +115,7 @@
 						<?php the_field('hero_headline_text'); ?>
 
 					</div> 
-					<div class="col-md-12 text-center">
+					<div class="text-center">
 						<a  target="_blank" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal-hero">
 						<!-- <a href="<?php the_field('hero_button_url'); ?>" target="_blank" class="btn btn-primary btn-lg" > -->
 							<?php the_field('hero_button_text'); ?> <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>

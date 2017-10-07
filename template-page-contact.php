@@ -13,7 +13,7 @@ get_header('contact'); ?>
 <section class="container">
 <!-- <h1>I am contact</h1> -->
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main contact-content" role="main">
+		<main id="main-contact" class="site-main contact-content">
 
 			<div class="col-sm-6 col-md-6 col-lg-6">
 				<article class="imb-contact-page-left-text-only">
@@ -26,7 +26,7 @@ get_header('contact'); ?>
 			<div class="col-sm-6 col-md-6 col-lg-6">
 				<figure>
 					
-					<img class="img-responsive" src="<?php the_field('contact_page_right_image'); ?>" alt="">
+					<img class="img-responsive center-block" src="<?php the_field('contact_page_right_image'); ?>" alt="">
 					<!-- <img src="/wp-content/uploads/2017/05/contact-pg-img-600x929.jpg" alt=""> -->
 					
 				</figure>

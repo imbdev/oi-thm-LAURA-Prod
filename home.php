@@ -30,7 +30,7 @@ get_header('blog'); ?>
 
             <div class="modal-header" style="background: #a6d287; color: white;">
 
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close pull-left" data-dismiss="modal" aria-label="Close" style="color: black;"><span aria-hidden="true">X</span></button>
 
                 <h4 class="modal-title text-center" id="myModalLabel" style="color: white;">www.laurahale.com</h4>
 
@@ -82,7 +82,7 @@ get_header('blog'); ?>
 
             <div class="modal-header" style="background: #be22a8; color: white;">
 
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close pull-left" data-dismiss="modal" aria-label="Close" style="color: black;"><span aria-hidden="true">X</span></button>
 
                 <h4 class="modal-title text-center" id="myModalLabel" style="color: white;">www.laurahale.com</h4>
 

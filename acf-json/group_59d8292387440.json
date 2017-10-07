@@ -1,0 +1,64 @@
+{
+    "key": "group_59d8292387440",
+    "title": "ABOUT - OPTIN BLOCK",
+    "fields": [
+        {
+            "key": "field_59d829238b9cc",
+            "label": "ABOUT OPTIN HEADLINE",
+            "name": "about_optin_headline",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59d82b5839933",
+            "label": "ENTER OPTIN FORM HTML CODE",
+            "name": "enter_optin_form_html_code",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-aboutpage.php"
+            }
+        ]
+    ],
+    "menu_order": 14,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1507339136
+}

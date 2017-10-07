@@ -33,6 +33,10 @@
 				}
 				.carousel-inner {
 					min-height: 430px;
+					@media ( max-width: 1200px ) {
+						min-height: 350px;
+						// border: 2px dotted red;
+					}					
 				}
 				.carousel-control.left {
 					background-image: none !important;
@@ -47,8 +51,11 @@
 					}
 					i {
 						font-size: 4rem;
-						// color: lighten( $gray-light, 10% );
 						color: $imb-primary;
+						@media ( max-width: 550px ) {
+							padding-top: 2rem;
+							// border: 2px dotted red;
+						}							
 					}
 
 					h4 {

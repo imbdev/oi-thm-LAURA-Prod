@@ -6124,10 +6124,9 @@ img {
   #masthead #header-hero-CTA-block #the-CTA {
     background-color: rgba(22, 23, 23, 0.5); }
     #masthead #header-hero-CTA-block #the-CTA .hero-text-block {
-      padding-left: 2rem;
       padding-top: 5rem;
       padding-bottom: 3rem; }
-      @media (max-width: 350px) {
+      @media (max-width: 450px) {
         #masthead #header-hero-CTA-block #the-CTA .hero-text-block {
           padding-left: 0; } }
       @media (min-width: 800px) {
@@ -6145,6 +6144,9 @@ img {
           #masthead #header-hero-CTA-block #the-CTA .hero-text-block .text-only {
             font-size: 3.5rem;
             padding-left: 2rem; } }
+        @media (max-width: 450px) {
+          #masthead #header-hero-CTA-block #the-CTA .hero-text-block .text-only {
+            font-size: 2rem; } }
       #masthead #header-hero-CTA-block #the-CTA .hero-text-block .btn {
         color: #eeeeee;
         font-weight: 500;
@@ -6162,6 +6164,9 @@ img {
             padding: 2rem 5rem; } }
         #masthead #header-hero-CTA-block #the-CTA .hero-text-block .btn .fa {
           padding-left: 2rem; }
+        @media (max-width: 450px) {
+          #masthead #header-hero-CTA-block #the-CTA .hero-text-block .btn {
+            font-size: 2rem; } }
 
 /**
  *
@@ -6238,12 +6243,12 @@ img {
             color: white; }
       #imb-home-top-roadmap .flex-content-box .flex-item .headline {
         margin-top: 30%;
-        color: #db38c4; }
+        color: #db38c4;
+        min-height: 150px; }
       #imb-home-top-roadmap .flex-content-box .flex-item .text-only {
         color: white;
-        min-height: 250px; }
+        min-height: 200px; }
       #imb-home-top-roadmap .flex-content-box .flex-item .btn-holder {
-        margin-top: 2rem;
         margin-bottom: 2rem; }
 
 /**
@@ -6337,6 +6342,9 @@ img {
   background-color: #f6cff1;
   background-image: url("/wp-content/uploads/2017/07/dot-patterns-green-50x50.png");
   min-height: 700px; }
+  @media (max-width: 550px) {
+    #imb-home-testimonial {
+      min-height: 100px; } }
   #imb-home-testimonial .content-box #testimonial-slider #carousel-example-captions .carousel-indicators {
     margin-top: 15rem;
     top: 60%; }
@@ -6350,6 +6358,9 @@ img {
       background-color: #a6d287; }
   #imb-home-testimonial .content-box #testimonial-slider #carousel-example-captions .carousel-inner {
     min-height: 430px; }
+    @media (max-width: 550px) {
+      #imb-home-testimonial .content-box #testimonial-slider #carousel-example-captions .carousel-inner {
+        min-height: 100px; } }
   #imb-home-testimonial .content-box #testimonial-slider #carousel-example-captions .carousel-control.left {
     background-image: none !important; }
   #imb-home-testimonial .content-box #testimonial-slider #carousel-example-captions .carousel-control.right {
@@ -6359,6 +6370,9 @@ img {
   #imb-home-testimonial .content-box #testimonial-slider #carousel-example-captions .item i {
     font-size: 4rem;
     color: #919191; }
+    @media (max-width: 550px) {
+      #imb-home-testimonial .content-box #testimonial-slider #carousel-example-captions .item i {
+        padding-top: 2rem; } }
   #imb-home-testimonial .content-box #testimonial-slider #carousel-example-captions .item h4 {
     font-size: 1.5rem; }
   #imb-home-testimonial .content-box #testimonial-slider #carousel-example-captions .item .moose-caption {
@@ -6533,6 +6547,9 @@ img {
       background-color: #a6d287; }
   #imb-aboutpg-testimonial .content-box #testimonial-slider #carousel-example-captions .carousel-inner {
     min-height: 430px; }
+    @media (max-width: 1200px) {
+      #imb-aboutpg-testimonial .content-box #testimonial-slider #carousel-example-captions .carousel-inner {
+        min-height: 350px; } }
   #imb-aboutpg-testimonial .content-box #testimonial-slider #carousel-example-captions .carousel-control.left {
     background-image: none !important; }
   #imb-aboutpg-testimonial .content-box #testimonial-slider #carousel-example-captions .carousel-control.right {
@@ -6542,6 +6559,9 @@ img {
   #imb-aboutpg-testimonial .content-box #testimonial-slider #carousel-example-captions .item i {
     font-size: 4rem;
     color: #a6d287; }
+    @media (max-width: 550px) {
+      #imb-aboutpg-testimonial .content-box #testimonial-slider #carousel-example-captions .item i {
+        padding-top: 2rem; } }
   #imb-aboutpg-testimonial .content-box #testimonial-slider #carousel-example-captions .item h4 {
     font-size: 1.7rem;
     font-weight: 300;
@@ -7164,6 +7184,18 @@ img {
 * CONTACT PAGE STYLES
 *
 */
+/**
+ *
+ * Contact  Page Styles
+ *
+ */
+@media (min-width: 769px) {
+  #main-contact .imb-contact-page-left-text-only {
+    padding-top: 7rem; } }
+@media (min-width: 992px) {
+  #main-contact .imb-contact-page-left-text-only {
+    padding-top: 20rem; } }
+
 /**
  *
  * Side Bar Styles
