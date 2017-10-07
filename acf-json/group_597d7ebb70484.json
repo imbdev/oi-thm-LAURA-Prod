@@ -1,0 +1,120 @@
+{
+    "key": "group_597d7ebb70484",
+    "title": "VIDEO TESTIMONIALS",
+    "fields": [
+        {
+            "key": "field_59d604b3b5dcb",
+            "label": "CLIENT DESCRIPTION",
+            "name": "client_description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_597d7ee1c887e",
+            "label": "MODAL VIDEO CONTENT",
+            "name": "modal_video_content",
+            "type": "flexible_content",
+            "instructions": "You need to remove the current layout to see the choice list of YouTube and Wistia. There is only one layout allowed at once.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "597d83d779586": {
+                    "key": "597d83d779586",
+                    "name": "youtube_video_id_code",
+                    "label": "YOUTUBE VIDEO ID CODE",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_597d84a3e392a",
+                            "label": "Enter YouTube Video ID Only",
+                            "name": "enter_youtube_video_id_only",
+                            "type": "text",
+                            "instructions": "Example: eJnWPhSQjPs",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "597d84de964a4": {
+                    "key": "597d84de964a4",
+                    "name": "wistia_video_embed_code",
+                    "label": "WISTIA VIDEO EMBED CODE",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_597d851a964a5",
+                            "label": "Enter Wistia Embed Script Code",
+                            "name": "enter_wistia_embed_script_code",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<script src=\"https:\/\/fast.wistia.com\/embed\/medias\/pjrknij7mt.jsonp\" async><\/script><script src=\"https:\/\/fast.wistia.com\/assets\/external\/E-v1.js\" async><\/script><div class=\"wistia_responsive_padding\" style=\"padding:56.25% 0 0 0;position:relative;\"><div class=\"wistia_responsive_wrapper\" style=\"height:100%;left:0;position:absolute;top:0;width:100%;\"><div class=\"wistia_embed wistia_async_pjrknij7mt videoFoam=true\" style=\"height:100%;width:100%\">&nbsp;<\/div><\/div><\/div>",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "ADD VIDEO CONTENT",
+            "min": "",
+            "max": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "video_testimonials"
+            }
+        ]
+    ],
+    "menu_order": 4,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1507198571
+}

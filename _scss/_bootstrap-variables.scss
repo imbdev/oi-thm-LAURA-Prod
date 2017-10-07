@@ -9,6 +9,7 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 $tiana-teal: #5FC5BF;
+$imb-secondary: #be22a8; //Purple
 $gray-base:              #000;
 $gray-darker:            lighten($gray-base, 13.5%); // #222;
 $gray-dark:              lighten($gray-base, 20%);   // #333;
@@ -39,7 +40,7 @@ $black       : #000000;
 // $brand-primary:         darken(#428bca, 6.5%); // #337ab7;
 // $brand-primary:  darken( #FFFC13, 30% );
 
-$brand-primary:         #ef4982; //almost hotpink
+$brand-primary:         $imb-secondary;
 $brand-success:         #434876; //dark blue
 $brand-info:            $tiana-teal;
 // $brand-info:            #5bc0de;

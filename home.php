@@ -28,11 +28,11 @@ get_header('blog'); ?>
 
         <div class="modal-content">
 
-            <div class="modal-header" style="background: #ef4a83; color: white;">
+            <div class="modal-header" style="background: #a6d287; color: white;">
 
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;"><span aria-hidden="true">&times;</span></button>
 
-                <h4 class="modal-title text-center" id="myModalLabel" style="color: white;">www.jenniferbrown.com</h4>
+                <h4 class="modal-title text-center" id="myModalLabel" style="color: white;">www.laurahale.com</h4>
 
             </div>
 
@@ -80,11 +80,11 @@ get_header('blog'); ?>
 
         <div class="modal-content">
 
-            <div class="modal-header" style="background: #01b3b5; color: white;">
+            <div class="modal-header" style="background: #be22a8; color: white;">
 
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;"><span aria-hidden="true">&times;</span></button>
 
-                <h4 class="modal-title text-center" id="myModalLabel" style="color: white;">www.jenniferbrown.com</h4>
+                <h4 class="modal-title text-center" id="myModalLabel" style="color: white;">www.laurahale.com</h4>
 
             </div>
 

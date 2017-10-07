@@ -1,5 +1,7 @@
-$imb-admin-primary: #36395C;
-$imb-admin-secondary: #A574AE;
+$imb-admin-primary: #59524c;
+$imb-admin-secondary: #c6a589;
+// $imb-admin-primary: #36395C;
+// $imb-admin-secondary: #A574AE;
 
 
 /**
@@ -51,14 +53,17 @@ $imb-admin-secondary: #A574AE;
 	}
 
 	.acf-field {
+		// background-color: lighten( $imb-admin-secondary, 0% );
 		background-color: lighten( $imb-admin-secondary, 25% );
 	}
 
 	.inside.acf-fields {
+		// background-color: lighten( $imb-admin-secondary, 0% );
 		background-color: lighten( $imb-admin-secondary, 25% );
 	}
 
 	.button-link {
+		// background-color: lighten( $imb-admin-secondary, 0% );
 		background-color: lighten( $imb-admin-secondary, 20% );
 	}
 

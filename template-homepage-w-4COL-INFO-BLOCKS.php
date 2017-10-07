@@ -2,7 +2,6 @@
 /**
  * The template for displaying all pages with Sidebar
  *
- * Template Name: Home Page Template
  *
  *
  * This is the template that displays all pages by default.
@@ -165,25 +164,45 @@ get_header('home'); ?>
 
 			<h1 class="headline text-center"><?php the_field('info_block_headline'); ?></h1>
 
-			<div class=" col-sm-12 col-md-12 col-lg-6">
+			<div class=" col-sm-6 col-md-3 col-lg-3">
 				<article class="text-box">
 					
 					<div class="text-only">
 
-						<?php the_field('info_block_text_box_1') ?>
+						<?php //the_field('info_block_text_box_1') ?>
 						
 					</div>
 
 				</article>				
 			</div>
-			
-			
-			<div class=" col-sm-12 col-md-12 col-lg-6">
+			<div class=" col-sm-6 col-md-3 col-lg-3">
 				<article class="text-box">
 					
 					<div class="text-only">
 
-						<img class="img-responsive center-block" src="<?php the_field('info_block_right_image'); ?>" alt="">
+						<?php //the_field('info_block_text_box_2') ?>
+						
+					</div>
+
+				</article>				
+			</div>
+			<div class=" col-sm-6 col-md-3 col-lg-3">
+				<article class="text-box">
+					
+					<div class="text-only">
+
+						<?php //the_field('info_block_text_box_3') ?>
+						
+					</div>
+
+				</article>				
+			</div>
+			<div class=" col-sm-6 col-md-3 col-lg-3">
+				<article class="text-box">
+					
+					<div class="text-only">
+
+						<?php //the_field('info_block_text_box_4') ?>
 						
 					</div>
 

@@ -42,6 +42,7 @@ function moose_frame_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'blog-size', 400, 200, true );
+	add_image_size( 'featured-size', 400, 150, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

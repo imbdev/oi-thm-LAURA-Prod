@@ -108,9 +108,15 @@ get_header('about'); ?>
 
 			</figure>
 
+		</div> <!-- ICON ROW END -->
 
-			
-		</div>
+		<div class="about-top-text row">
+
+			<div>
+				<?php the_field('about_top_text'); ?>
+			</div>
+
+		</div>		
 
 	</div>
 	

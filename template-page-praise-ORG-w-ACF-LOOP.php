@@ -1,7 +1,6 @@
 <?php
 /**
  * The template for displaying all pages.
- * Template Name: Testimonial Page Template
  *
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
@@ -272,70 +271,38 @@ get_header('simple'); ?>
 		
 		<div class="flex-container">
 
-	<?php
-		$args = array(
-			'post_type'      => 'video_testimonials',
-		    'posts_per_page' => -1
-		);
-		 
-		$my_query = new WP_Query( $args );
-		?>
-		 
-		<?php if ( $my_query->have_posts() ) : ?>
-		 
-		    <?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>		
+			<article class="text-box flex-item text-center" v-for="post in posts">
 
-				<article class="text-box flex-item text-center">
+				<figure class="video-box">
 
-					<figure class="video-box">
+				    <div class="video">
 
-					    <div class="video">
+				        <div class="embed-responsive embed-responsive-16by9" v-if="post.acf.choose_video_type[0].acf_fc_layout === wistia">
 
-								<?php if( have_rows('modal_video_content') ) : ?>
+				        	<div v-html="post.acf.choose_video_type[0].wistia_video_code "></div>  		
 
-						    		<?php while ( have_rows('modal_video_content') ) :  the_row(); ?>
+							<!-- // <script src="https://fast.wistia.com/embed/medias/qbk5zsvwii.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:50.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_qbk5zsvwii videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div> -->
 
-							    		<?php if ( get_row_layout() == 'wistia_video_embed_code' ) : ?>	
+				        </div>
 
-											<div class="embed-responsive embed-responsive-16by9">
+				        <div class="embed-responsive embed-responsive-16by9" v-else-if="post.acf.choose_video_type[0].acf_fc_layout === youtube">
+								
+				            <iframe class="embed-responsive-item" :src="url_1+post.acf.choose_video_type[0].youtube_video_id_only+url_2"></iframe>
 
-												<?php  the_sub_field('enter_wistia_embed_script_code'); ?>
-									             <!-- // <script src="https://fast.wistia.com/embed/medias/pjrknij7mt.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_pjrknij7mt videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div> -->
-									        
-									        </div>							    			
+				        </div>
+					
+				    </div>
 
-										<?php elseif( get_row_layout() == 'youtube_video_id_code' ) :  ?>
-												
-											<div class="embed-responsive embed-responsive-16by9" id="yt-player">
+				</figure>	
 
-										        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php the_sub_field('enter_youtube_video_id_only'); ?>?autoplay=0&rel=0&enablejsapi=1" allowfullscreen="" width="100%" frameborder="0" height="100%" ></iframe>
-									        
-									        </div>
-										
-										<?php endif; ?>
+				<h4 class="subheading">{{ post.acf.client_description }}</h4>
+				<h2 class="heading">{{ post.title.rendered }}</h2>
+				<p class="praise-text">
+					{{ post.acf.client_content }}
+				</p>
 
-									<?php endwhile; ?>
-
-								<?php endif; ?>		
-					       
-						
-					    </div>
-
-					</figure>	
-
-					<h4 class="subheading"> <?php the_field('client_description'); ?> </h4>
-					<h2 class="heading"> <?php the_title(); ?> </h2>
-					<p class="praise-text">
-						<?php the_content(); ?>
-					</p>
-
-				</article>
-
-				<?php endwhile; ?>
-		 
-			<?php endif; ?>
-		 
-			<?php wp_reset_postdata(); ?>			
+			</article>
+			
 
 		</div>
 

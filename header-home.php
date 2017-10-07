@@ -110,7 +110,7 @@
 
 				<article class="hero-text-block">
 
-					<div class="text-only">
+					<div class="text-only text-center">
 						
 						<?php the_field('hero_headline_text'); ?>
 
